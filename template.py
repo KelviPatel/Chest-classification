@@ -4,7 +4,7 @@ import logging
 logging.basicConfig(level=logging.INFO,format='[%(asctime)s]:%()s')
 
 project_name='cnnclassifer'
-
+ # all the files needed
 files=[
     ".github/workflows/.gitkeep",
     f"src/{project_name}/__init__.py",
