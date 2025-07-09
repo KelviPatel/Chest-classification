@@ -66,3 +66,33 @@
 [2025-07-09 18:21:38,578:INFO:data_ingestion:Downloading data from https://drive.google.com/file/d/1Clwogi2zK2P4EjH5iTGeUktm0cHlXDGD/view?usp=sharing into file artifacts/data_ingestion/data.zip]
 [2025-07-09 18:21:57,864:INFO:data_ingestion:Downloaded data from https://drive.google.com/file/d/1Clwogi2zK2P4EjH5iTGeUktm0cHlXDGD/view?usp=sharing into file artifacts/data_ingestion/data.zip]
 [2025-07-09 18:21:59,621:INFO:main:stage Data Ingestion stage completed]
+
+[2025-07-09 21:57:56,762:INFO:main:stage Data Ingestion stage started]
+[2025-07-09 21:57:56,762:INFO:common:yaml file config\config.yaml loaded successfully]
+[2025-07-09 21:57:56,777:INFO:common:yaml file params.yaml loaded successfully]
+[2025-07-09 21:57:56,778:INFO:common:created directory at :artifacts]
+[2025-07-09 21:57:56,778:ERROR:main:'ConfigurationManager' object has no attribute 'get_data_ingestion_config']
+Traceback (most recent call last):
+  File "C:\Users\Patel\OneDrive\Desktop\pl\chest classification\main.py", line 10, in <module>
+    obj.main()
+  File "C:\Users\Patel\OneDrive\Desktop\pl\chest classification\src\cnnclassifer\pipeline\data_ingestion_01.py", line 13, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+AttributeError: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config'
+[2025-07-09 22:00:38,488:INFO:main:stage Data Ingestion stage started]
+[2025-07-09 22:00:38,488:INFO:common:yaml file config\config.yaml loaded successfully]
+[2025-07-09 22:00:38,488:INFO:common:yaml file params.yaml loaded successfully]
+[2025-07-09 22:00:38,488:INFO:common:created directory at :artifacts]
+[2025-07-09 22:00:38,488:INFO:common:created directory at :artifacts/data_ingestion]
+[2025-07-09 22:00:38,488:INFO:data_ingestion:Downloading data from https://drive.google.com/file/d/1Clwogi2zK2P4EjH5iTGeUktm0cHlXDGD/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-07-09 22:00:56,084:INFO:data_ingestion:Downloaded data from https://drive.google.com/file/d/1Clwogi2zK2P4EjH5iTGeUktm0cHlXDGD/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-07-09 22:00:57,900:INFO:main:stage Data Ingestion stage completed]
+[2025-07-09 22:00:57,902:INFO:main:*******************]
+[2025-07-09 22:00:57,903:INFO:main:>>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-07-09 22:00:57,905:INFO:common:yaml file config\config.yaml loaded successfully]
+[2025-07-09 22:00:57,908:INFO:common:yaml file params.yaml loaded successfully]
+[2025-07-09 22:00:57,908:INFO:common:created directory at :artifacts]
+[2025-07-09 22:00:57,908:INFO:common:created directory at :artifacts/prepare_base_model]
+[2025-07-09 22:00:58,867:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-07-09 22:00:59,312:INFO:main:>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
