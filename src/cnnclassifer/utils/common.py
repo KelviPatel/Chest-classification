@@ -30,11 +30,11 @@ def create_directories(path_to_directories:list,verbose=True):
             logger.info(f"created directory at :{path}")
 
 @ensure_annotations
-def save_json(path:Path,data:dict):
-    with open(path,"w") as f:
-        content =json.load(f)
-    logger.info(f"json file loaded at :{path}")
-    return ConfigBox(content)
+def save_json(path: Path, data:dict):
+    with open(path, "w") as f:
+        json.dump(data, f, indent=4) 
+    print(f"JSON saved at: {path}")
+
 
 @ensure_annotations
 def save_bin(data:Any,path:Path):

@@ -1,13 +1,13 @@
 from cnnclassifer.config.configuration import ConfigurationManager
 from cnnclassifer.componenets.training import Training
-from logs import logger
+from cnnclassifer import logger
 
 STAGE_NAME = "Training"
 class TrainingPipeline:
     def __init__(self):
         pass
 
-    def main():
+    def main(self):
         config = ConfigurationManager()
         training_config = config.get_training_config()
         training = Training(config=training_config)
