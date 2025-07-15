@@ -4,7 +4,7 @@ from flask_cors import CORS, cross_origin
 from cnnclassifer.utils.common import decodeImage
 from cnnclassifer.pipeline.prediction import PredictionPipeline
 
-
+#environment
 os.putenv('LANG', 'en_US.UTF-8')
 os.putenv('LC_ALL', 'en_US.UTF-8')
 
